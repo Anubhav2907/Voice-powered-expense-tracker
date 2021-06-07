@@ -20,10 +20,43 @@ const Form = () => {
         </Typography>
       </Grid>
       <Grid item xs={6}>
-        <Typography align="center" variant="subtitle2" gutterBottom>
-          ...
-        </Typography>
+        <FormControl fullWidth>
+          <InputLabel>Type</InputLabel>
+          <Select>
+            <MenuItem value="Income">Income</MenuItem>
+            <MenuItem value="Expense">Expense</MenuItem>
+          </Select>
+        </FormControl>
+      </Grid>{" "}
+      <Grid item xs={6}>
+        <FormControl fullWidth>
+          <InputLabel>Category</InputLabel>
+          <Select>
+            <MenuItem value="Buisness">Buisness</MenuItem>
+            <MenuItem value="Salary">Salary</MenuItem>
+          </Select>
+        </FormControl>
       </Grid>
+      <Grid item xs={6}>
+        <TextField type="number" label="Amount"></TextField>
+      </Grid>
+      <Grid item xs={6}>
+        <TextField
+          InputLabelProps={{
+            shrink: true,
+          }}
+          type="date"
+          label="Date"
+        ></TextField>
+      </Grid>
+      <Button
+        className={classes.button}
+        variant="outlined"
+        color="primary"
+        fullWidth
+      >
+        Create
+      </Button>
     </Grid>
   );
 };

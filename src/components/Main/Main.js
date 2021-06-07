@@ -8,6 +8,7 @@ import {
   Divider,
 } from "@material-ui/core";
 import useStyles from "./styles.js";
+import Form from "./Form/Form.js";
 const Main = () => {
   const classes = useStyles();
   return (
@@ -19,7 +20,7 @@ const Main = () => {
         ></CardHeader>
         <CardContent>
           <Typography variant="h5" align="center">
-            Total Balancew $77
+            Total Balance $77
           </Typography>
           <Typography
             variant="subtitle1"
@@ -28,6 +29,7 @@ const Main = () => {
             Try saying add income for $100 in category salary for monday
           </Typography>
           <Divider></Divider>
+          <Form></Form>
         </CardContent>
         <CardContent className={classes.cardContent}>
           <Grid container spacing={2}>
