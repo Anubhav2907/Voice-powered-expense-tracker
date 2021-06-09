@@ -29,8 +29,8 @@ const Main = () => {
           >
             Try saying add income for $100 in category salary for monday
           </Typography>
-          <Divider></Divider>
-          <Form></Form>
+          <Divider className={classes.divider}></Divider>
+          <Form />
         </CardContent>
         <CardContent className={classes.cardContent}>
           <Grid container spacing={2}>

@@ -30,11 +30,13 @@ function App() {
         <Grid item xs={12} sm={4}>
           <Details title="Expense"></Details>
         </Grid>
+        <Grid item xs={12} sm={12}>
+          <PushToTalkButtonContainer style={{ paddingTop: "2em" }}>
+            <PushToTalkButton></PushToTalkButton>
+            <ErrorPanel></ErrorPanel>
+          </PushToTalkButtonContainer>
+        </Grid>
       </Grid>
-      <PushToTalkButtonContainer>
-        <PushToTalkButton></PushToTalkButton>
-        <ErrorPanel></ErrorPanel>
-      </PushToTalkButtonContainer>
     </div>
   );
 }
